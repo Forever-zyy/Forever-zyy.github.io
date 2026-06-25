@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dacity Fashion Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #EEF8DD; /* 原图淡浅薄荷绿底色 */
+            font-family: "Times New Roman", serif;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+        /* 导航栏 */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 28px 0;
+            font-size: 34px;
+        }
+        .nav-group {
+            display: flex;
+            gap: 64px;
+        }
+        .nav-group a {
+            color: #000000;
+            text-decoration: none;
+        }
+        .login {
+            color: #368AED;
+            text-decoration: none;
+        }
+        /* 头部大图文案区 */
+        .header-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 42px;
+        }
+        .header-text p {
+            font-size: 36px;
+            line-height: 1.6;
+            color: #425230;
+            text-align: center;
+        }
+        .orange-slogan {
+            font-size: 34px;
+            color: #F27922;
+            font-weight: 600;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .header-img img {
+            width: 100%;
+            display: block;
+        }
+        /* 三套穿搭三栏布局 */
+        .three-looks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-bottom: 64px;
+        }
+        .three-looks img {
+            width: 100%;
+            display: block;
+        }
+        /* 蕨类+标语区块 */
+        .quote-block-1 {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 32px;
+            align-items: center;
+            margin-bottom: 64px;
+        }
+        .fern-img img {
+            width: 100%;
+            display: block;
+        }
+        .quote-bold {
+            font-size: 44px;
+            font-weight: bold;
+            line-height: 1.4;
+            color: #000;
+        }
+        /* 长文案+碎花女生区块 */
+        .quote-block-2 {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 32px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+        .long-text {
+            font-size: 46px;
+            line-height: 1.4;
+            color: #222;
+        }
+        .bottom-girl img {
+            width: 100%;
+            display: block;
+        }
+        /* 页脚 */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 30px;
+            font-size: 13px;
+            color: #333;
+        }
+        .pay-logos {
+            display: flex;
+            gap: 6px;
+        }
+        .pay-logos span {
+            border: 1px solid #999;
+            padding: 2px 6px;
+            font-size: 11px;
+        }
+        .footer-box-group {
+            display: flex;
+            gap: 10px;
+        }
+        .footer-box-group span {
+            width: 12px;
+            height: 12px;
+            border: 1px solid #999;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航 -->
+    <nav>
+        <div class="nav-group">
+            <a href="#">Dacity</a>
+            <a href="#">About</a>
+            <a href="#">Offer</a>
+            <a href="#">Shop</a>
+        </div>
+        <a href="#" class="login">Login</a>
+    </nav>
+
+    <!-- 头部图文 -->
+    <section class="header-wrap">
+        <div class="header-text">
+            <p>What you wear is how<br>you present yourself<br>to the world,<br>especially today,<br>when human<br>contacts are so quick.<br>Fashion is instant<br>language.</p>
+            <p class="orange-slogan">Clothes mean nothing until<br>someone lives in them</p>
+        </div>
+        <div class="header-img">
+            <img src="top.jpg" alt="top model">
+        </div>
+    </section>
+
+    <!-- 三套穿搭图片 -->
+    <section class="three-looks">
+        <div>
+            <img src="look1.jpg" alt="look 1">
+        </div>
+        <div>
+            <img src="look2.jpg" alt="look 2">
+        </div>
+        <div>
+            <img src="look3.jpg" alt="look 3">
+        </div>
+    </section>
+
+    <!-- 蕨类植物 + 标语 -->
+    <section class="quote-block-1">
+        <div class="fern-img">
+            <img src="leaf.jpg" alt="fern leaf">
+        </div>
+        <div class="quote-bold">
+            Style is something<br>each of us already<br>has, all we need to<br>do is find it.
+        </div>
+    </section>
+
+    <!-- 底部长文案 + 碎花女生 -->
+    <section class="quote-block-2">
+        <div class="long-text">
+            Everyone can be<br>dressed up to be<br>very beautiful, but<br>people are not to<br>dress up their own<br>time is the most<br>attractive.
+        </div>
+        <div class="bottom-girl">
+            <img src="bottom.jpg" alt="bottom model">
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div>© 2022 TeeSpace. All rights reserved.</div>
+        <div class="pay-logos">
+            <span>AMEX</span>
+            <span>ApplePay</span>
+            <span>Pay</span>
+            <span>Master</span>
+            <span>DPay</span>
+            <span>VISA</span>
+        </div>
+        <div class="footer-box-group">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </footer>
+</body>
+</html>
